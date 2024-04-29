@@ -27,6 +27,7 @@
 .flower-card:hover {
   /* filter: contrast(130%); */
   filter: brightness(115%);
+  color: rgb(213, 52, 79);
 }
 
 .flower-image {

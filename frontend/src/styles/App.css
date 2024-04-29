@@ -31,6 +31,10 @@
   transition: color 1s ease;
 }
 
+#FloretteLogoText:hover {
+  color: #f2536e;
+}
+
 #FloretteLogo {
   width: 20%;
   height: 100%;

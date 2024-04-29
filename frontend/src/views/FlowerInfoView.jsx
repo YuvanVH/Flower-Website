@@ -18,6 +18,10 @@ const FlowerInfoView = () => {
         // Fetcha JSON-data från filen 'flowers.json'
         const data = await response.json(); // Konvertera svaret till JSON-format
 
+        // Konvertera strängar i JSON till arrayer (för den ligger i databasen)
+        data.colors = JSON.parse(data.colors);
+        data.symbolism = JSON.parse(data.symbolism);
+
         setFlower(data);
         // const selectedFlower = data.find(flower => flower.id === parseInt(id)); // Hitta den valda blomman baserat på id
         // setFlower(selectedFlower); // Uppdatera state med den valda blomman

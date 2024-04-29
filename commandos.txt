@@ -1,6 +1,16 @@
 Starta i tabell-filen:
 sqlite3 flowers.db
 
+Ladda upp till github:
+echo "node_modules" >> .gitignore
+git init
+git add .
+git status
+git commit -m "Add first version"
+git branch -M main
+git remote add origin <Clone URL>
+git push -u origin main
+
 Se tabell:
 .tables
 .schema

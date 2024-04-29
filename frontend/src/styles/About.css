@@ -1,0 +1,36 @@
+#aboutTitleHover {
+  font-size: 3.2em;
+  line-height: 1.1;
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+  transition: color 2s ease;
+}
+
+#aboutTitleHover:hover {
+  color: rgb(213, 52, 79);
+}
+
+.aboutContainer {
+  width: 100%;
+  height: 670px;
+  padding-top: 40px;
+  margin-bottom: 50px;
+  object-fit: cover;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(57, 69, 53));
+
+  /* vågig ram */
+  --mask:
+    radial-gradient(283.98px at 50% calc(100% - 381px), #000 99%, #0000 101%) calc(50% - 254px) 0/508px 100%,
+    radial-gradient(283.98px at 50% calc(100% + 254px), #0000 99%, #000 101%) 50% calc(100% - 127px)/508px 100% repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}
+
+.aboutTextContainer {
+  padding: 0 20% 20% 20%;
+}
+
+.aboutTextContainer>p {
+  padding: 20px;
+}

@@ -1,0 +1,36 @@
+.menuButton {
+  /* Göm knappen som standard */
+  display: none;
+  /* försöker göra övergång */
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+/* Mediaförfrågan för att visa knappen på mindre skärmar */
+@media (max-width: 1024px) {
+  .menuButton {
+    display: inline-block;
+    /* Visa knappen på mindre skärmar */
+    background: none;
+    /* Ta bort bakgrundsfärgen */
+    border: none;
+    /* Ta bort gränsen */
+    cursor: pointer;
+    padding: 0;
+    /* Ta bort padding */
+    transition: all 1s ease;
+    /* Lägg till en jämn övergång för alla egenskaper */
+    border-radius: 19px;
+  }
+}
+
+.menuButton img {
+  width: 25px;
+  height: 20px;
+  border-radius: 19px;
+}
+
+.menuButton:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.288);
+  background-color: rgba(255, 255, 255, 0.079);
+}

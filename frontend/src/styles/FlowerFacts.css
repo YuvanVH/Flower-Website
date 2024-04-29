@@ -1,0 +1,150 @@
+#flowerFactsTitle {
+  display: block;
+}
+
+.quizContainerPic {
+  position: relative;
+  width: 50%;
+  margin: auto;
+  margin-top: 30px;
+
+  border-style: dotted;
+  border-width: thick;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.quizContainer {
+  width: 100%;
+  height: 750px;
+  object-fit: cover;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(57, 69, 53));
+
+  /* vågig ram */
+  --mask:
+    radial-gradient(283.98px at 50% calc(100% - 381px), #000 99%, #0000 101%) calc(50% - 254px) 0/508px 100%,
+    radial-gradient(283.98px at 50% calc(100% + 254px), #0000 99%, #000 101%) 50% calc(100% - 127px)/508px 100% repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}
+
+.quizContainerPic img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.quizContainerPic .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(62, 62, 62, 0.628);
+  color: white;
+  opacity: 0;
+  transition: opacity 1s;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quizContainerPic:hover .overlay {
+  opacity: 1;
+}
+
+.quizText {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  display: block;
+  width: 50%;
+
+}
+
+.link {
+  display: block;
+  /* eller inline-block */
+  text-decoration: none;
+  text-align: center;
+  margin-top: 10px;
+  width: 100%;
+  /* Lägg till önskat mellanrum till toppen */
+}
+
+.link:hover {
+  color: #f2536e;
+
+}
+
+input {
+  width: 300px;
+  padding: 10px 30px;
+  border-radius: 20px;
+  color: rgb(214, 214, 214);
+  background-color: rgba(0, 0, 0, 0.316);
+  font-weight: 500;
+  transition: box-shadow 0.7s ease;
+  /* Lägg till en övergång på box-shadow */
+}
+
+input:focus {
+  outline: none;
+  /* Tar bort fokusramen helt */
+  /* eller */
+  /* Skräddarsy din egen stil för fokusramen */
+  box-shadow: 0 0 7px rgba(255, 255, 255, 0.568);
+  /* Till exempel en grå skugga */
+  transition: box-shadow 0.7s ease;
+  /* Långsam övergång i 0.3 sekunder */
+}
+
+input:not(:focus) {
+  box-shadow: none;
+  /* Återställ till standardbox-shadow när inte i fokus */
+}
+
+#inputButtonFacts {
+
+  padding: 0.6em 0.9em;
+  border-radius: 19px;
+  background-color: #333a302c;
+  transition: box-shadow 0.7s ease;
+}
+
+inputButtonFacts:hover {
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.288);
+  transition: box-shadow 0.3s ease;
+}
+
+.searchBarStyle {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.searchMessage {
+  color: rgba(255, 255, 255, 0.52);
+  font-size: small;
+  margin: 20px;
+}
+
+@media (max-width: 485px) {
+
+  input {
+    padding: 8px 5px;
+    border-radius: 20px;
+    color: rgb(214, 214, 214);
+    background-color: rgba(0, 0, 0, 0.091);
+    font-weight: 500;
+    width: 230px;
+  }
+
+  h1 {
+    font-size: 15rem;
+  }
+}

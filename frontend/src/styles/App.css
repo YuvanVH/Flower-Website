@@ -1,0 +1,187 @@
+/* App.css */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #2c3128;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#FloretteLogoText {
+  position: absolute;
+  font-size: 70px;
+  /* Uppdaterat värde för font-size för att göra redpin större */
+  width: auto;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  top: 50%;
+  /* Centrera vertikalt */
+  left: 50%;
+  /* Centrera horisontellt */
+  transform: translate(-50%, -50%);
+  /* Centrera absolut positionerad text relativt till förälderelementet */
+  transition: color 1s ease;
+}
+
+#FloretteLogo {
+  width: 20%;
+  height: 100%;
+  font-family: "Abril Fatface", serif;
+  font-weight: 300;
+  font-style: normal;
+  position: relative;
+  /* Lägg till relativ position */
+}
+
+.appNav {
+  display: flex;
+  justify-content: center;
+  /* Centrera elementen horisontellt */
+  font-size: 25px;
+  font-family: "Abril Fatface", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.appNav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  /* Gör listan till en flex-container */
+}
+
+.appNav ul li {
+  margin-top: 10px;
+  margin-right: 60px;
+  /* Lägg till lite avstånd mellan menyobjekten */
+}
+
+.appNav ul li:last-child {
+  margin-right: 0;
+  /* Ingen marginal till det sista menyobjektet */
+}
+
+.appNav ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  padding: 10px;
+  transition: color 0.4s ease;
+  /* En jämn övergång när man för musen över länkarna */
+}
+
+.appNav ul li a:hover {
+  color: rgb(213, 52, 79);
+  /* Ändra färgen när man för musen över länkarna */
+}
+
+@media (max-width: 495px) {
+  .appNav ul li {
+    margin-right: 0px;
+    /* Lägg till lite avstånd mellan menyobjekten */
+  }
+
+  .appNav p {
+    font-size: small;
+  }
+
+  .appNav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 9px;
+    transition: color 0.4s ease;
+    /* En jämn övergång när man för musen över länkarna */
+  }
+}
+
+/* test */
+.desktopNav {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  font-family: "Abril Fatface", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.desktopNav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.desktopNav ul li {
+  margin-top: 10px;
+  margin-right: 60px;
+}
+
+.desktopNav ul li:last-child {
+  margin-right: 0;
+}
+
+.desktopNav ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  padding: 10px;
+  transition: color 0.4s ease;
+}
+
+.desktopNav ul li a:hover {
+  color: rgb(213, 52, 79);
+}
+
+/* Mediaförfrågan för att dölja desktop-menyn på mindre skärmar */
+@media (max-width: 1024px) {
+  .desktopNav {
+    display: none;
+  }
+}
+
+@media (max-width: 850px) {
+
+  #FloretteLogoText {
+    position: absolute;
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 420px) {
+
+  #FloretteLogoText {
+    position: absolute;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 422px) {
+  .appNav ul li {
+    margin-right: 0px;
+    /* Lägg till lite avstånd mellan menyobjekten */
+  }
+
+  .appNav p {
+    font-size: small;
+  }
+
+  .appNav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 6px;
+    font-size: smaller;
+    transition: color 0.4s ease;
+    /* En jämn övergång när man för musen över länkarna */
+  }
+}

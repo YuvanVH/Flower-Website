@@ -1,0 +1,323 @@
+[
+  {
+    "id": 1,
+    "name": "Rose",
+    "image": "rose.jpeg",
+    "colors": [
+      "Red",
+      "White",
+      "Pink",
+      "Yellow"
+    ],
+    "symbolism": [
+      "Love",
+      "Passion",
+      "Beauty"
+    ],
+    "description": "Queen of flowers. Roses are iconic for their beauty and fragrance, often symbolizing love and passion.",
+    "latinName": "Rosa",
+    "history": "Roses have been revered throughout history for their beauty and fragrance. They have been featured in art, literature, and cultural ceremonies for centuries.",
+    "story": "In folklore, roses are often associated with tales of romance and love. They are said to have sprung from the tears of the Greek goddess of love, Aphrodite, and have since been a symbol of love and beauty.",
+    "fragrance": "Roses emit a sweet and floral fragrance that is both intoxicating and soothing, filling the air with their romantic scent.",
+    "properties": "In aromatherapy, rose oil is believed to promote relaxation and reduce stress. It is also used to enhance mood and promote feelings of love and compassion."
+  },
+  {
+    "id": 2,
+    "name": "Lily",
+    "image": "lily.jpeg",
+    "colors": [
+      "White",
+      "Yellow",
+      "Orange",
+      "Pink"
+    ],
+    "symbolism": [
+      "Purity",
+      "Innocence",
+      "Renewal"
+    ],
+    "description": "Lilies are known for their large, fragrant blooms and often symbolize purity and innocence.",
+    "latinName": "Lilium",
+    "history": "Lilies have a long history of use in religious and cultural ceremonies, where they are often associated with purity and renewal.",
+    "story": "In mythology, lilies are often linked with stories of creation and rebirth. They are said to have bloomed from the tears of the Roman goddess Juno, symbolizing purity and renewal.",
+    "fragrance": "Lilies emit a sweet and delicate fragrance that is both calming and refreshing, filling the air with their heavenly scent.",
+    "properties": "In aromatherapy, lily oil is believed to promote relaxation and reduce anxiety. It is also used to promote mental clarity and feelings of inner peace."
+  },
+  {
+    "id": 3,
+    "name": "Orchid",
+    "image": "orchid.jpeg",
+    "colors": [
+      "Purple",
+      "Pink",
+      "White",
+      "Yellow",
+      "Multi"
+    ],
+    "symbolism": [
+      "Beauty",
+      "Elegance",
+      "Happiness"
+    ],
+    "description": "Orchids are known for their exotic blooms and often symbolize beauty and happiness.",
+    "latinName": "Orchidaceae",
+    "history": "Orchids have a rich history and have been revered for their beauty and elegance for centuries. They have been prized in various cultures for their exotic appearance.",
+    "story": "In ancient civilizations, orchids were associated with love and fertility. Legends tell of how they were used in love potions and ceremonies to invoke feelings of passion and desire.",
+    "fragrance": "Orchids emit a subtle and floral fragrance that is both alluring and mysterious, filling the air with their exotic scent.",
+    "properties": "In traditional medicine, orchids are believed to have healing properties and are used to treat various ailments. Their fragrance is said to promote relaxation and reduce stress."
+  },
+  {
+    "id": 4,
+    "name": "Tulip",
+    "image": "tulip.jpeg",
+    "colors": [
+      "Red",
+      "Yellow",
+      "Pink",
+      "White",
+      "Multi"
+    ],
+    "symbolism": [
+      "Joy",
+      "Spring",
+      "Renewal"
+    ],
+    "description": "Tulips are known for their vibrant colors and are often associated with joy and springtime.",
+    "latinName": "Tulipa",
+    "history": "Tulips have a long history of cultivation and have been prized for their beauty and elegance since ancient times. They have been featured in art and literature for centuries.",
+    "story": "In folklore, tulips are often linked with stories of prosperity and abundance. Legends tell of how they were once considered a symbol of wealth and were highly prized by nobility.",
+    "fragrance": "Tulips emit a subtle and fresh fragrance that is reminiscent of springtime, filling the air with their cheerful scent.",
+    "properties": "In herbal medicine, tulip petals are believed to have medicinal properties and are used to treat various ailments. Their fragrance is said to uplift the spirit and promote feelings of happiness."
+  },
+  {
+    "id": 5,
+    "name": "Sunflower",
+    "image": "sunflower.jpeg",
+    "colors": [
+      "Yellow"
+    ],
+    "symbolism": [
+      "Joy",
+      "Strength",
+      "Hope"
+    ],
+    "description": "Sunflowers are known for their bright and cheerful blooms, symbolizing joy and optimism.",
+    "latinName": "Helianthus",
+    "history": "Sunflowers have a long history of cultivation and have been valued for their beauty and usefulness for centuries. They have been featured in art and folklore in various cultures.",
+    "story": "In mythology, sunflowers are often associated with the sun god and are said to follow the sun's path across the sky. Legends tell of how they were once worshipped as symbols of fertility and abundance.",
+    "fragrance": "Sunflowers emit a subtle and earthy fragrance that is reminiscent of the outdoors, filling the air with their sunny scent.",
+    "properties": "In aromatherapy, sunflower oil is believed to promote relaxation and reduce stress. Its bright and cheerful fragrance is said to uplift the spirit and promote feelings of joy and optimism."
+  },
+  {
+    "id": 6,
+    "name": "Lavender",
+    "image": "lavender3.jpeg",
+    "colors": [
+      "Purple"
+    ],
+    "symbolism": [
+      "Calm",
+      "Purity",
+      "Health"
+    ],
+    "description": "Lavender is renowned for its calming fragrance and is often associated with purity and tranquility.",
+    "latinName": "Lavandula",
+    "history": "Lavender has a long history of use in herbal medicine and aromatherapy. It has been prized for its soothing properties and delightful fragrance for centuries.",
+    "story": "In folklore, lavender is often linked with stories of healing and protection. Legends tell of how it was used in ancient civilizations to ward off evil spirits and promote health and well-being.",
+    "fragrance": "Lavender emits a sweet and floral fragrance that is both calming and refreshing, filling the air with its soothing scent.",
+    "properties": "In aromatherapy, lavender oil is believed to promote relaxation and reduce anxiety. It is also used to promote restful sleep and alleviate headaches."
+  },
+  {
+    "id": 7,
+    "name": "Jasmine",
+    "image": "jasmine.jpeg",
+    "colors": [
+      "White"
+    ],
+    "symbolism": [
+      "Love",
+      "Sensuality",
+      "Happiness"
+    ],
+    "description": "Jasmine is prized for its intoxicating fragrance and delicate blooms, symbolizing love, sensuality, and happiness.",
+    "latinName": "Jasminum",
+    "history": "Jasmine has a rich history and has been prized for its fragrance and beauty for centuries. It has been used in perfumes, teas, and religious ceremonies in various cultures.",
+    "story": "In mythology, jasmine is often associated with love and romance. Legends tell of how it was used in ancient civilizations as an aphrodisiac and symbol of passion.",
+    "fragrance": "Jasmine emits a sweet and floral fragrance that is both captivating and seductive, filling the air with its alluring scent.",
+    "properties": "In aromatherapy, jasmine oil is believed to promote relaxation and reduce anxiety. It is also used to enhance mood and promote feelings of well-being."
+  },
+  {
+    "id": 8,
+    "name": "Chrysanthemum",
+    "image": "chrysanthemum.jpeg",
+    "colors": [
+      "White",
+      "Yellow",
+      "Pink",
+      "Orange",
+      "Multi"
+    ],
+    "symbolism": [
+      "Longevity",
+      "Happiness",
+      "Loyalty"
+    ],
+    "description": "Chrysanthemums are known for their vibrant colors and are often associated with longevity, happiness, and loyalty.",
+    "latinName": "Chrysanthemum",
+    "history": "Chrysanthemums have a long history of cultivation and have been prized for their beauty and elegance in various cultures. They have been featured in art, literature, and cultural ceremonies for centuries.",
+    "story": "In folklore, chrysanthemums are often linked with stories of longevity and prosperity. Legends tell of how they were once considered a symbol of immortality and were highly prized by nobility.",
+    "fragrance": "Chrysanthemums emit a subtle and earthy fragrance that is reminiscent of autumn, filling the air with their cheerful scent.",
+    "properties": "In traditional medicine, chrysanthemum tea is believed to have various health benefits, including improving immunity and relieving stress. The fragrance of chrysanthemums is said to promote relaxation and reduce anxiety."
+  },
+  {
+    "id": 9,
+    "name": "Forget-Me-Not",
+    "image": "forget-me-not.jpeg",
+    "colors": [
+      "Blue",
+      "Pink",
+      "White"
+    ],
+    "symbolism": [
+      "Remembrance",
+      "True love",
+      "Fidelity"
+    ],
+    "description": "Forget-Me-Not flowers are small, delicate blooms known for their vibrant blue color and distinct shape.",
+    "latinName": "Myosotis",
+    "history": "Forget-Me-Not flowers have a rich history steeped in folklore and symbolism. In many cultures, they are associated with enduring love and loyalty, often given as tokens of affection or exchanged between loved ones to express everlasting devotion.",
+    "story": "Legend has it that in medieval times, a knight and his lady were walking along the side of a river. As he bent over to pick a flower for her, his heavy armor caused him to fall into the river. Before he sank beneath the surface, he threw the flower to his lady and cried out, 'Forget me not!' This story gave rise to the flower's name and its association with remembrance and eternal love.",
+    "fragrance": "Forget-Me-Not flowers emit a subtle, sweet fragrance reminiscent of honey and springtime. While not as strong as some other blooms, their delicate scent adds to their charm and allure.",
+    "properties": "In herbal medicine, Forget-Me-Not flowers are believed to have properties that promote emotional healing and mental well-being. Their association with love and remembrance is thought to provide comfort and solace to those experiencing grief or loss."
+  },
+  {
+    "id": 10,
+    "name": "Wisteria",
+    "image": "wisteria.jpeg",
+    "colors": [
+      "Purple",
+      "Blue",
+      "White"
+    ],
+    "symbolism": [
+      "Romanticism",
+      "Longing",
+      "Grace"
+    ],
+    "description": "Wisteria is renowned for its cascading clusters of fragrant blooms and often symbolizes romanticism, longing, and grace.",
+    "latinName": "Wisteria",
+    "history": "Wisteria has a long history of cultivation and has been prized for its beauty and fragrance in gardens and landscapes around the world. It has been featured in art, literature, and cultural ceremonies for centuries.",
+    "story": "In folklore, wisteria is often associated with tales of romance and love. Legends tell of how its elegant blooms have the power to evoke feelings of passion and desire.",
+    "fragrance": "Wisteria emits a sweet and floral fragrance that is both intoxicating and enchanting, filling the air with its romantic scent.",
+    "properties": "In aromatherapy, wisteria oil is believed to promote relaxation and reduce stress. Its delicate fragrance is said to uplift the spirit and evoke feelings of love and longing."
+  },
+  {
+    "id": 11,
+    "name": "Dahlia",
+    "image": "dahlia.jpeg",
+    "colors": [
+      "Red",
+      "Pink",
+      "Yellow",
+      "Orange",
+      "Purple",
+      "White",
+      "Multi"
+    ],
+    "symbolism": [
+      "Elegance",
+      "Inner Strength",
+      "Creativity"
+    ],
+    "description": "Dahlias are known for their diverse range of colors and intricate blooms, symbolizing elegance, inner strength, and creativity.",
+    "latinName": "Dahlia",
+    "history": "Dahlias have a fascinating history and have been cultivated for centuries for their beauty and diversity. They have been featured in gardens, floral arrangements, and cultural ceremonies around the world.",
+    "story": "In folklore, dahlias are often associated with tales of resilience and creativity. Legends tell of how their vibrant blooms have the power to inspire and uplift the spirit.",
+    "fragrance": "Dahlias are not known for their fragrance, but their visual beauty more than compensates for this. Their colorful blooms add vibrancy and elegance to any bouquet.",
+    "properties": "While dahlias do not have specific healing properties, their vibrant colors and stunning blooms are believed to have a positive impact on mood and emotional well-being."
+  },
+  {
+    "id": 12,
+    "name": "Baby's Breath",
+    "image": "babys-breath.jpeg",
+    "colors": [
+      "White"
+    ],
+    "symbolism": [
+      "Innocence",
+      "Purity",
+      "Tenderness"
+    ],
+    "description": "Baby's Breath is characterized by its delicate clusters of tiny white flowers, symbolizing innocence, purity, and tenderness.",
+    "latinName": "Gypsophila",
+    "history": "Baby's Breath has a long history of use as a filler flower in bouquets and floral arrangements. It has been prized for its delicate appearance and versatility in various cultural contexts.",
+    "story": "In folklore, Baby's Breath is often associated with tales of innocence and purity. Legends tell of how its delicate blooms have the power to evoke feelings of tenderness and nostalgia.",
+    "fragrance": "Baby's Breath has a subtle and sweet fragrance that is reminiscent of fresh air and springtime, adding a delicate touch to any bouquet.",
+    "properties": "In herbal medicine, Baby's Breath is believed to have calming properties and is used to promote relaxation and reduce stress. Its gentle fragrance is said to soothe the mind and promote feelings of tranquility."
+  },
+  {
+    "id": 13,
+    "name": "Hydrangea",
+    "image": "hydrangea.jpeg",
+    "colors": [
+      "Blue",
+      "Pink",
+      "Purple",
+      "White"
+    ],
+    "symbolism": [
+      "Gratitude",
+      "Understanding",
+      "Heartfelt Emotion"
+    ],
+    "description": "Hydrangeas are known for their large, showy blooms and symbolizing gratitude, understanding, and heartfelt emotion.",
+    "latinName": "Hydrangea macrophylla",
+    "history": "Hydrangeas have a long history of cultivation and have been prized for their beauty and versatility in gardens and floral arrangements. They have been featured in art, literature, and cultural ceremonies for centuries.",
+    "story": "In folklore, hydrangeas are often associated with stories of gratitude and appreciation. Legends tell of how their abundant blooms have the power to convey heartfelt emotion and understanding.",
+    "fragrance": "Hydrangeas have a subtle and sweet fragrance that is reminiscent of fresh spring air, adding a touch of elegance to any bouquet.",
+    "properties": "In herbal medicine, hydrangea leaves and flowers are believed to have anti-inflammatory properties and are used to promote urinary tract health and relieve pain. While the flowers themselves do not have a specific healing fragrance, their presence is believed to promote a sense of well-being and harmony."
+  },
+  {
+    "id": 14,
+    "name": "Magnolia",
+    "image": "magnolia.jpeg",
+    "colors": [
+      "White",
+      "Pink",
+      "Purple"
+    ],
+    "symbolism": [
+      "Beauty",
+      "Perseverance",
+      "Joy"
+    ],
+    "description": "Magnolias are admired for their large, fragrant blooms and come in various shades that symbolizing beauty, perseverance, and joy.",
+    "latinName": "Magnolia",
+    "history": "Magnolias have a rich history dating back millions of years and have been revered for their exquisite beauty and enchanting fragrance. They have been featured in art, literature, and cultural traditions throughout the ages.",
+    "story": "In mythology and folklore, magnolias are often associated with tales of beauty, love, and transformation. Legends tell of how their elegant blooms have the power to inspire feelings of joy and perseverance.",
+    "fragrance": "Magnolias emit a sweet and citrusy fragrance that is both uplifting and calming, filling the air with their enchanting scent.",
+    "properties": "While magnolias are primarily cultivated for their ornamental value, certain varieties are used in traditional medicine for their purported health benefits. Magnolia bark, in particular, is believed to have anti-inflammatory and antioxidant properties, promoting overall well-being."
+  },
+  {
+    "id": 15,
+    "name": "Poppy",
+    "image": "poppy.jpeg",
+    "colors": [
+      "Red",
+      "Orange",
+      "Yellow",
+      "White"
+    ],
+    "symbolism": [
+      "Remembrance",
+      "Peace",
+      "Sleep"
+    ],
+    "description": "Poppies are known for their vibrant blooms and are often associated with remembrance, peace, and sleep.",
+    "latinName": "Papaver",
+    "history": "Poppies have a rich cultural history and have been featured in art, literature, and cultural ceremonies for centuries. They are often used as symbols of remembrance for fallen soldiers.",
+    "story": "In mythology and folklore, poppies are sometimes associated with tales of sleep and dreams. They have been used in traditional medicine for their sedative properties and to promote relaxation.",
+    "fragrance": "Poppies may have a subtle fragrance, but they are not typically cultivated for their scent.",
+    "properties": "In traditional medicine, certain varieties of poppies are used for their medicinal properties, including pain relief and sedation. However, it's essential to exercise caution and consult a healthcare professional before using poppy-based remedies. Certain parts of the plant, such as the seeds and pods, contain alkaloids that can be toxic if ingested in large quantities."
+  }
+]

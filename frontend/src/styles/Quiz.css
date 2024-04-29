@@ -1,0 +1,13 @@
+.quizViewContainer {
+  width: 100%;
+  height: 870px;
+  object-fit: cover;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(57, 69, 53));
+
+  /* vågig ram */
+  --mask:
+    radial-gradient(283.98px at 50% calc(100% - 381px), #000 99%, #0000 101%) calc(50% - 254px) 0/508px 100%,
+    radial-gradient(283.98px at 50% calc(100% + 254px), #0000 99%, #000 101%) 50% calc(100% - 127px)/508px 100% repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}

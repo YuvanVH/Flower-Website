@@ -1,0 +1,145 @@
+/* ContactForm.css */
+form {
+  position: relative;
+  /* Gör föräldern till pseudoelementet */
+  padding-top: 100px;
+  padding-bottom: 200px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+}
+
+/* Lägg till bakgrundsbilden med pseudoelementet ::before */
+form::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/src/assets/pictures/twig.png');
+  background-size: cover;
+  z-index: -1;
+  /* Lägg det under formuläret */
+  opacity: 0.8;
+  /* Normal opacity för bakgrundsbilden */
+  transition: opacity 1s;
+  /* Gör övergången smidig */
+}
+
+/* Hover-effekt: Ändra opacity för bakgrundsbilden */
+form:hover::before {
+  opacity: 0.2;
+  /* Justera opacity när man hovrar */
+}
+
+.contactInfoText {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+  margin-top: 80px;
+}
+
+.contactInfoText1,
+.contactInfoText2 {
+  width: 45%;
+  height: 400px;
+  /* Bredden för varje del */
+  background-color: rgba(60, 92, 66, 0.661);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Centrera vertikalt */
+  align-items: center;
+  /* Centrera horisontellt */
+
+  /* mönster på under ramen*/
+  --mask:
+    radial-gradient(44.72px at 50% calc(100% - 60px), #000 99%, #0000 101%) calc(50% - 40px) 0/80px 100%,
+    radial-gradient(44.72px at 50% calc(100% + 40px), #0000 99%, #000 101%) 50% calc(100% - 20px)/80px 100% repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}
+
+p {
+  margin: 0;
+}
+
+.contactSmallerInfoText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactInfoText2 {
+  background-color: rgba(74, 93, 84, 0.441);
+}
+
+.contactInfoText2 ul {
+  list-style-type: none;
+  padding: 0;
+  /* Tar bort space från listan trots den va onsynlig*/
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+textarea {
+  width: 100%;
+  max-width: 400px;
+  height: 200px;
+  border: 2px solid #aeaeae8d;
+  border-radius: 10px;
+}
+
+.contactTitelInfo {
+  display: block;
+  margin: 20px;
+}
+
+button {
+  margin: 20px;
+}
+
+/* Styla knappen */
+.contact-form-button {
+  background-color: #44444481;
+  /* Grön färg */
+  color: white;
+  /* Vit textfärg */
+  padding: 10px 20px;
+  /* Lite utrymme runt texten */
+  cursor: pointer;
+  /* Visar handmarkören vid hovring */
+  transition: background-color 0.3s;
+  /* Gör övergången smidig */
+  font-weight: 700;
+
+}
+
+/* Styla knappen när man hovrar över den */
+.contact-form-button:hover {
+  background-color: #491f1f;
+  /* Lite mörkare grön färg */
+}
+
+/* Stil för varje label */
+.formContainer label {
+  margin-bottom: 5px;
+}
+
+/* Stil för felmeddelanden */
+.formContainer .error {
+  color: red;
+  margin-top: 5px;
+}
+
+@media (max-width: 485px) {
+  textarea {
+    width: 100%;
+    max-width: 300px;
+    height: 180px;
+  }
+}

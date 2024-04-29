@@ -1,0 +1,78 @@
+/* styles/MenuContent.css */
+.menu {
+  display: none;
+  /* Dölj menyn som standard */
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  /* Gör listan till en flex-container */
+}
+
+.menu ul li {
+  margin-right: 20px;
+  /* Lägg till lite avstånd mellan menyobjekten */
+}
+
+.menu ul li:last-child {
+  margin-right: 0;
+  /* Ingen marginal till det sista menyobjektet */
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  padding: 10px;
+  transition: color 0.4s ease;
+  /* En jämn övergång när man för musen över länkarna */
+}
+
+.menu ul li a:hover {
+  color: rgb(213, 52, 79);
+  /* Ändra färgen när man för musen över länkarna */
+}
+
+@media (max-width: 495px) {
+  .menu ul li {
+    margin-right: 0px;
+    /* Lägg till lite avstånd mellan menyobjekten */
+  }
+
+  .menu p {
+    font-size: small;
+  }
+
+  .menu ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 9px;
+    transition: color 0.4s ease;
+    /* En jämn övergång när man för musen över länkarna */
+  }
+}
+
+@media (max-width: 422px) {
+  .menu ul li {
+    margin-right: 0px;
+    /* Lägg till lite avstånd mellan menyobjekten */
+  }
+
+  .menu p {
+    font-size: small;
+  }
+
+  .menu ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 6px;
+    font-size: smaller;
+    transition: color 0.4s ease;
+    /* En jämn övergång när man för musen över länkarna */
+  }
+}

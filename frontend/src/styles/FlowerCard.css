@@ -1,0 +1,132 @@
+/* src/styles/FlowerCard.css */
+.flowerContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* Visa så många kolumner som möjligt med en minimal bredd på 300px */
+  gap: 20px;
+  /* Avstånd mellan korten */
+  align-items: center;
+}
+
+.flower-card {
+  border: 2px solid #ccc;
+  /* Ram runt kortet */
+  border-radius: 10px;
+  /* Runda hörn på kortet */
+  overflow: hidden;
+  /* Dölj innehållet som är utanför kortet */
+  height: 550px;
+
+  /* till hover effect */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.8s;
+  opacity: 1;
+}
+
+.flower-card:hover {
+  /* filter: contrast(130%); */
+  filter: brightness(115%);
+}
+
+.flower-image {
+  width: 100%;
+  /* Bilden fyller hela bredden på kortet */
+  height: 340px;
+  /* Ange den önskade höjden för de beskurna bilderna */
+  object-fit: cover;
+  /* Beskär bilden för att fylla ramen med behållande av proportionerna */
+}
+
+.flower-name {
+  margin-bottom: 10px;
+}
+
+.flower-latin {
+  margin-top: 0;
+  font-size: small;
+}
+
+.flower-info {
+  padding: 20px 20px;
+  /* Utfyllnad runt textinnehållet */
+}
+
+.flower-info h2 {
+  margin-top: 0;
+  /* Ingen marginal över rubriken */
+}
+
+.flower-info p {
+  margin-bottom: 0;
+  /* Ingen marginal under texten */
+}
+
+/* Justera antalet kolumner baserat på skärmstorlek */
+@media (max-width: 685px) {
+  .flowerContainer {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* Visa fler kolumner när skärmen är mindre */
+  }
+
+  .flower-info {
+    padding: 25px 30px;
+    /* Utfyllnad runt textinnehållet */
+    font-size: 14px;
+  }
+
+  .flower-card {
+    border: 2px solid #ccc;
+    /* Ram runt kortet */
+    border-radius: 10px;
+    /* Runda hörn på kortet */
+    overflow: hidden;
+    /* Dölj innehållet som är utanför kortet */
+    height: 350px;
+  }
+
+  .flower-image {
+    width: 100%;
+    /* Bilden fyller hela bredden på kortet */
+    height: 100px;
+    /* Ange den önskade höjden för de beskurna bilderna */
+    object-fit: cover;
+    /* Beskär bilden för att fylla ramen med behållande av proportionerna */
+  }
+}
+
+@media (max-width: 485px) {
+  .flowerContainer {
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    max-width: 330px;
+    margin: 0 auto;
+    /* Centrera elementet horisontellt */
+    align-items: center;
+  }
+
+  .flower-info {
+    padding: 25px 30px;
+    /* Utfyllnad runt textinnehållet */
+    font-size: medium;
+
+  }
+
+  .flower-card {
+    border: 2px solid #ccc;
+    /* Ram runt kortet */
+    border-radius: 10px;
+    /* Runda hörn på kortet */
+    overflow: hidden;
+    /* Dölj innehållet som är utanför kortet */
+    height: 330px;
+  }
+
+  .flower-image {
+    width: 100%;
+    /* Bilden fyller hela bredden på kortet */
+    height: 100px;
+    /* Ange den önskade höjden för de beskurna bilderna */
+    object-fit: cover;
+    /* Beskär bilden för att fylla ramen med behållande av proportionerna */
+  }
+}

@@ -20,27 +20,27 @@ const ContactForm = () => {
         }, 400);
       }}
     >
-      <Form>
+      <Form className='ContactFormStyle'>
         <h2>Or send us a mail</h2>
         <div>
           <span className='contactTitelInfo'><label htmlFor="name">Name</label></span>
           <Field type="text" name="name" />
-          <ErrorMessage name="name" component="div" />
+          <ErrorMessage className='errorMessage' name="name" component="div" />
         </div>
 
         <div>
           <span className='contactTitelInfo'><label htmlFor="email">Email Address</label></span>
           <Field type="email" name="email" />
-          <ErrorMessage name="email" component="div" />
+          <ErrorMessage className='errorMessage' name="email" component="div" />
         </div>
 
         <div>
           <span className='contactTitelInfo'><label htmlFor="message">Message</label></span>
           <Field as="textarea" name="message" />
-          <ErrorMessage name="message" component="div" />
+          <ErrorMessage className='errorMessage' name="message" component="div" />
         </div>
 
-        <button type="submit" className="contact-form-button">Submit</button>
+        <button id="formButton" type="submit" className="contact-form-button">Submit</button>
 
       </Form>
     </Formik>

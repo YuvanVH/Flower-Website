@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import '../styles/FlowerInfo.css';
+import Comments from '../components/CommentsInfo.jsx';
 
 const FlowerInfoView = () => {
   // State för att lagra den valda blomman och id från URL:en
@@ -19,7 +20,7 @@ const FlowerInfoView = () => {
         const data = await response.json(); // Konvertera svaret till JSON-format
 
         // Konvertera strängar i JSON till arrayer (för den ligger i databasen)
-        data.colors = JSON.parse(data.colors);
+        data.color = JSON.parse(data.color);
         data.symbolism = JSON.parse(data.symbolism);
 
         setFlower(data);
@@ -47,15 +48,12 @@ const FlowerInfoView = () => {
     <div>
       <img src={`/src/assets/picturesApi/${flower.image}`} alt={flower.name} className="flower-image-info" />
       <h1>{flower.name}</h1>
-
       <p className='flower-description-info'>{flower.description}</p>
-
       <section className='small-info-container'>
         <p className="flower-latin-info"><strong>Latin Name </strong>{flower.latinName}</p>
         <p className="flower-symbolism-info"><strong>Symbolism </strong> {flower.symbolism.join(', ')}</p>
         <p className="flower-color-info"><strong>Color variants </strong> {flower.colors.join(', ')}</p>
       </section>
-
       <div className='flower-info-container'>
         <p className="flower-fragrance-info"><strong>Fragrance </strong> {flower.fragrance}</p>
         <p className="flower-properties-info">
@@ -65,6 +63,9 @@ const FlowerInfoView = () => {
         <p className="flower-story-info"><strong>Lore/Story </strong> {flower.story}</p>
       </div>
       <img src={`/src/assets/picturesApi/${flower.image}`} alt={flower.name} className="flower-image-info-bottom" />
+      <div className='comments-wrapper'>
+        <Comments flowerId={id} />
+      </div>
     </div>
   );
 };

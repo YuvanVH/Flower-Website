@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import FlowerCard from '../components/FlowerCard.jsx';
 import '../styles/FlowerFacts.css';
 import { Link } from 'react-router-dom';
+import axios from 'axios'; // Glöm inte att importera axios
 
 const FlowerFactsView = () => {
   // State för att lagra blomdata och sökterm
@@ -13,7 +14,12 @@ const FlowerFactsView = () => {
   useEffect(() => {
     const fetchFlowers = async () => {
       try {
-        const response = await fetch(`http://localhost:5001/flowers`);
+        let url = `http://localhost:5001/flowers`;
+        // Om searchTerm inte är tom, lägg till en query-parameter för att filtrera blommor efter färg
+        if (searchTerm) {
+          url += `?color=${searchTerm}`;
+        }
+        const response = await fetch(url);
         const data = await response.json();
         setFlowers(data);
       } catch (error) {
@@ -27,26 +33,11 @@ const FlowerFactsView = () => {
     return () => {
       // Inget att rensa upp här i detta fall...
     };
-  }, []);
+  }, [searchTerm]); // Uppdatera blommor när searchTerm ändras
 
   // Funktion för att uppdatera söktermen när användaren skriver i sökfältet
   const handleSearchBar = (event) => {
     setSearchTerm(event.target.value); // Uppdatera state med värdet från sökfältet
-  };
-
-  // Filtrera blommor baserat på söktermen
-  const filteredFlowers = flowers.filter(flower =>
-    flower.name.toLowerCase().includes(searchTerm.toLowerCase()) || !searchTerm
-  );
-
-  // Komponent för att visa meddelande om antalet sökresultat
-  const SearchMessage = ({ numSearchResults }) => {
-    return (
-      <div className="searchMessage">
-        {/* Visa antalet sökresultat eller ett meddelande om inga resultat hittades */}
-        {numSearchResults === 0 ? <p>No flowers found</p> : <p>- {numSearchResults} flowers found -</p>}
-      </div>
-    );
   };
 
   // Funktion för att rensa söktermen när användaren klickar på knappen
@@ -70,14 +61,12 @@ const FlowerFactsView = () => {
           <button id="inputButtonFacts" onClick={clearSearch}>X</button>
         )}
       </span>
-      {/* Visa antalet sökresultat eller ett meddelande om inga resultat hittades */}
-      <SearchMessage numSearchResults={filteredFlowers.length} />
 
       {/* Rendera blomkort för varje filtrerad blomma */}
       <div className="flowerContainer">
         {/* Använd Link för att länka till FlowerInfoView för varje blomma */}
-        {filteredFlowers.map(flower => (
-          <div key={flower.name}>
+        {flowers.map(flower => (
+          <div key={flower.id}>
             {/* Länk till detaljerad vy för varje blomma */}
             <Link to={`/flowers/${flower.id}`}>
               {/* Rendera ett blomkort för varje blomma */}
